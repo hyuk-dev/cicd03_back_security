@@ -24,7 +24,10 @@ class SpringSecurityJwtApplicationTests {
   @Autowired
   private PasswordEncoder passwordEncoder;
 
-
+    @Test
+    void fail() {
+      throw new RuntimeException("실패 테스트");
+    }
 
   /**
   * 관리자 등록
